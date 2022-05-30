@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de familiares</title>
+</head>
+<body>
+    <h1 style="color:black"> Bienvenidos al registro de familiares. <br> <br> Su listado de familiares es el siguiente:</h1>
+    {% for x in familiares %} 
+        - Nombre:{{x.nombre}}, Apellido:{{x.apellido}}, Dirección:{{x.direccion}}, Teléfono:{{x.telefono}}, DNI:{{x.dni}}, Fecha de nacimiento:{{x.fecha_nacimiento}} <br> <br>
+    {% endfor %}
+</body>
+</html>
